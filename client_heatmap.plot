@@ -1,6 +1,6 @@
 #!/usr/bin/gnuplot
 
-stats 'nodes' using 3
+stats 'clients' using 3
 set cbrange[STATS_min:STATS_max]
 
 set xlabel "hours"

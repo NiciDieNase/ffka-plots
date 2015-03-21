@@ -18,4 +18,5 @@ set ytics ("Mo" 1, "Di" 2, "Mi" 3, "Do" 4, "Fr" 5, "Sa" 6, "So" 0)
 set terminal pngcairo size 1000,800
 set output 'nodes.png'
 
+#splot "nodes" using 2:((int($1+1))%7):3 with image
 splot "nodes" using 2:1:3 with image
